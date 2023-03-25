@@ -1,8 +1,9 @@
-import { View, Text, Image, TextInput} from 'react-native'
+import { View, Text, Image, TextInput, ScrollView} from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import {React, useLayoutEffect} from 'react'
 import { useNavigation } from '@react-navigation/native'
 import {AdjustmentsVerticalIcon, MagnifyingGlassIcon, ChevronDownIcon, UserIcon} from "react-native-heroicons/outline"
+import Categories from '../components/Categories'
 
 const Home = () => {
   const navigation = useNavigation();
@@ -15,7 +16,6 @@ const Home = () => {
 
   return (
     <SafeAreaView className="bg-white pt-5">
-      <Text>
         {/*hEADER*/}
         <View className="flex-row pb-3 items-center mx-4 space-x-2 px-4">
           <Image source={{
@@ -42,7 +42,11 @@ const Home = () => {
 
           <AdjustmentsVerticalIcon color="#00CCBB"/>
         </View>
-      </Text>
+
+        {/* Body */}
+        <ScrollView className="bg-gray-400">
+          <Categories/>
+        </ScrollView>
     </SafeAreaView>
   )
 }
