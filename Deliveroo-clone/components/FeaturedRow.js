@@ -23,7 +23,7 @@ const FeaturedRow = ({id, title, description}) => {
     `, {id}).then((data) => {
       setRestaurants(data?.restaurants);
     })
-  }, [])
+  }, [id])
 
   return (
     <View>
@@ -38,7 +38,8 @@ const FeaturedRow = ({id, title, description}) => {
         horizontal
         contentContainerStyle={{
             paddingHorizontal: 15,
-            paddingTop: 10
+            paddingTop: 10,
+            
         }}
         showsHorizontalScrollIndicator={false}
         >
