@@ -12,6 +12,7 @@ const Home = () => {
   const navigation = useNavigation();
   const [featuredComponent, setFeaturedComponent] = useState([]);
 
+  //Hides navigation header (header having name of route)
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false
