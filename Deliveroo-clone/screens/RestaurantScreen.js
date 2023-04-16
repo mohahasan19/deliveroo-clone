@@ -41,7 +41,7 @@ const RestaurantScreen = () => {
             long,
             lat,
         }))
-    }, [dispatch])
+    }, [])
 
     //Hides navigation header (header having name of route)
     useLayoutEffect(() => {
