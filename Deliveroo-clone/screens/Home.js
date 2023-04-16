@@ -63,7 +63,10 @@ const Home = () => {
         </View>
 
         {/* Body */}
-        <ScrollView className="bg-gray-100">
+        <ScrollView className="bg-gray-100"
+        contentContainerStyle={{
+          paddingBottom: 140,
+        }}>
           <Categories/>
 
           {featuredComponent?.map((category) => (
