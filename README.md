@@ -11,3 +11,10 @@ The tech stack used in this project consists of:
 - [Sanity](https://www.sanity.io/docs)
 - [NativeWind](https://www.nativewind.dev/)
 - [React Navigation](https://reactnavigation.org/)
+
+## Demo
+The following is a video demonstration of the app's flow:
+
+https://user-images.githubusercontent.com/65140583/233367772-10d0af14-5e66-4811-9ecd-210de9b27256.mp4
+
+
